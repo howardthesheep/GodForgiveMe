@@ -1,0 +1,59 @@
+[hidden] {
+    display: none;
+}
+
+h1,h2,h3,h4,h5,p {
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+html,body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25em;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+section {
+    z-index: 10;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 5px;
+    justify-content: center;
+}
+
+section button {
+    margin: 10px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+section input[type=text] {
+    margin: 10px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+#results {
+    text-align: center;
+}

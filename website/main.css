@@ -2,7 +2,7 @@
     display: none;
 }
 
-h1,h2,h3,h4,h5,p {
+h1,h2,h3,h4,h5,p,a {
     color: white;
     font-family: 'Playfair Display', serif;
 }
@@ -16,12 +16,21 @@ html,body {
 
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
+body h1 {
+    margin: 10% 0;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 5px;
+}
+
+
 video {
     position: fixed;
+    z-index: -1;
     right: 0;
     bottom: 0;
     min-width: 100%;
@@ -30,14 +39,9 @@ video {
 }
 
 section {
-    z-index: 10;
-    margin: auto 0;
-    display: flex;
-    flex-direction: column;
     padding: 20px;
     background-color: rgba(0,0,0,0.4);
     border-radius: 5px;
-    justify-content: center;
 }
 
 section button {
@@ -52,6 +56,24 @@ section input[type=text] {
     padding: 10px;
     font-family: inherit;
     font-size: inherit;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    min-width: 100%;
+}
+
+footer nav {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 5px;
+}
+
+footer nav a {
+    cursor: pointer;
 }
 
 #results {
